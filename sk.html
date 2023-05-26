@@ -4,30 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danone Indonesia</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- You may link to a separate CSS file here -->
-    <style>
-        .vertical-line {
-          position: relative;
-          margin: 0 auto;
-          width: 2px;
-          height: 20px;
-          background-color: #dcdcdc;
-        }
-    
-        /* Optional: Center the line horizontally */
-        .vertical-line::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 2px;
-          background-color: #dcdcdc;
-        }
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/swipper.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script src="js/lightslider.js"></script>
+    <script src="js/jquery.js"></script>
 
-        .form-control {
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .vertical-line {
+        position: relative;
+        margin: 0 auto;
+        width: 2px;
+        height: 20px;
+        background-color: #dcdcdc;
+      }
+
+      /* Optional: Center the line horizontally */
+      .vertical-line::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        background-color: #dcdcdc;
+      }
+
+      .form-control {
         display: block;
         width: 100%;
         height: calc(1.5em + 0.75rem + 2px);
@@ -41,81 +50,337 @@
         border: 1px solid #ced4da;
         border-radius: 0.25rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        }
+      }
+
+      * {
+        font-family: "Poppins", sans-serif;
+        /* font-style: italic; */
+      }
     </style>
   </head>
 
   <body>
-    <header style="padding-left: 50px; padding-right: 50px;">
-      <nav style="display: flex; justify-content: space-between; align-items: center;">
+    <header style="padding-left: 50px; padding-right: 50px">
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
         <div class="danone-logo">
-            <img style="display: block; height: 80px;" src="https://danone.co.id/wp-content/uploads/2021/11/danone-logo-2.png" alt="danone-logo">
+          <img
+            style="display: block; height: 80px"
+            src="https://danone.co.id/wp-content/uploads/2021/11/danone-logo-2.png"
+            alt="danone-logo"
+          />
         </div>
-        <div class="wrapper" style="display: flex; flex-direction: column;">
-            <div class="wrapper">
-                <ul style="display: flex; justify-content: end">
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="20" height="23" src="https://danone.co.id/wp-content/uploads/2022/02/icon-tiktok.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
-                  </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="23" height="23" src="https://danone.co.id/wp-content/uploads/2022/02/icon-ig.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
-                  </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="30" height="24" src="https://danone.co.id/wp-content/uploads/2022/02/icon-yt.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
-                  </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="24" height="24" src="https://danone.co.id/wp-content/uploads/2022/02/icon-web.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
-                  </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">Kontak</a></small></li>
+        <div class="wrapper" style="display: flex; flex-direction: column">
+          <div class="wrapper">
+            <ul style="display: flex; justify-content: end">
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="#">
+                    <img
+                      width="20"
+                      height="23"
+                      src="https://danone.co.id/wp-content/uploads/2022/02/icon-tiktok.png"
+                      class="_mi _before _image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      aria-hidden="true"
+                    /> </a
+                ></small>
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="https://instagram.com/danoneindonesia?utm_medium=copy_link">
+                    <img
+                      width="23"
+                      height="23"
+                      src="https://danone.co.id/wp-content/uploads/2022/02/icon-ig.png"
+                      class="_mi _before _image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      aria-hidden="true"
+                    /> </a
+                ></small>
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="#">
+                    <img
+                      width="30"
+                      height="24"
+                      src="https://danone.co.id/wp-content/uploads/2022/02/icon-yt.png"
+                      class="_mi _before _image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      aria-hidden="true"
+                    /> </a
+                ></small>
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="#">
+                    <img
+                      width="24"
+                      height="24"
+                      src="https://danone.co.id/wp-content/uploads/2022/02/icon-web.png"
+                      class="_mi _before _image"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      aria-hidden="true"
+                    /> </a
+                ></small>
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="#"
+                    >Kontak</a
+                  ></small
+                >
+              </li>
 
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 0px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">ID</a></small></li>
-                  <div class="vertical-line" style="margin: 0;"></div>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 0px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">ENG</a></small></li>
-                </ul>
-            </div>
-            <div class="wrapper">
-                <ul style="display: flex; justify-content: space-evenly">
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Tentang Kami</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Merek</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Komitmen Kami</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Cerita Kami</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">danone karir</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 0px;"><a style="text-decoration: none; cursor: pointer;" href="#">campaign
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> -->
-                    </a>
-                  </li>
-                </ul>
-            </div>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 0px;
+                  padding-right: 10px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="#"
+                    >ID</a
+                  ></small
+                >
+              </li>
+              <div class="vertical-line" style="margin: 0"></div>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 10px;
+                  padding-right: 0px;
+                "
+              >
+                <small
+                  ><a style="text-decoration: none; cursor: pointer" href="#"
+                    >ENG</a
+                  ></small
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <ul style="display: flex; justify-content: space-evenly">
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                "
+              >
+                <a style="text-decoration: none; cursor: pointer" href="#"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                "
+              >
+                <a style="text-decoration: none; cursor: pointer" href="#"
+                  >Merek</a
+                >
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                "
+              >
+                <a style="text-decoration: none; cursor: pointer" href="#"
+                  >Komitmen Kami</a
+                >
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                "
+              >
+                <a style="text-decoration: none; cursor: pointer" href="#"
+                  >Cerita Kami</a
+                >
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                "
+              >
+                <a style="text-decoration: none; cursor: pointer" href="#"
+                  >danone karir</a
+                >
+              </li>
+              <li
+                style="
+                  list-style-type: none;
+                  text-transform: uppercase;
+                  padding-left: 30px;
+                  padding-right: 0px;
+                "
+              >
+                <a style="text-decoration: none; cursor: pointer" href="#"
+                  >campaign
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> -->
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
-        <section id="image" style="display: flex; justify-content: center; padding-left: 40px; padding-right: 40px; width: 100%; height: 450px;">
-            <img src="zw.jpg" alt="" style="display: block; width: 90%; height: 100%; object-fit: cover;">
-        </section>
-      <section id="contact" style="display: flex; justify-content: center; margin-top: 50px; margin-bottom: 50px;">
-          <div class="card" style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: #495057; border-style: solid; border-radius: 10px; width: 70%;">
-            <h2>Zero Waste Campaign</h2>
-            <p>Tanggal Mulai : 30 Juli 2023</p>
-            <p>Tanggal Akhir : 30 Agustus 2023</p>
-            <p>Syarat & Ketentuan</p>
-            <ol style="width: 50%;">
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quasi rem et veniam id consequatur magni. Numquam quaerat fugit laudantium facilis quam, consectetur ducimus, tempora vitae, cum sit velit dolores.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quasi rem et veniam id consequatur magni. Numquam quaerat fugit laudantium facilis quam, consectetur ducimus, tempora vitae, cum sit velit dolores.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quasi rem et veniam id consequatur magni. Numquam quaerat fugit laudantium facilis quam, consectetur ducimus, tempora vitae, cum sit velit dolores.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quasi rem et veniam id consequatur magni. Numquam quaerat fugit laudantium facilis quam, consectetur ducimus, tempora vitae, cum sit velit dolores.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quasi rem et veniam id consequatur magni. Numquam quaerat fugit laudantium facilis quam, consectetur ducimus, tempora vitae, cum sit velit dolores.</li>
-            </ol>
-            <div class="button" style="align-self: flex-end; padding: 10px;">
-                <button type="button"> Daftar</button>
-            </div>
+      <ul id="slider">
+        <li>
+            <img src="img/zw.jpg" alt="..." style="width: 100%; height: 500px;">
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+      </ul>
+
+      <section
+        id="contact"
+        style="
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        "
+      >
+        <div
+          class="card"
+          style="
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: #495057;
+            border-style: solid;
+            border-radius: 10px;
+            width: 70%;
+          "
+        >
+          <h2>Zero Waste Campaign</h2>
+          <p>Tanggal Mulai : 30 Juli 2023</p>
+          <p>Tanggal Akhir : 30 Agustus 2023</p>
+          <p>Syarat & Ketentuan</p>
+          <ol style="width: 50%">
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident quasi rem et veniam id consequatur magni. Numquam
+              quaerat fugit laudantium facilis quam, consectetur ducimus,
+              tempora vitae, cum sit velit dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident quasi rem et veniam id consequatur magni. Numquam
+              quaerat fugit laudantium facilis quam, consectetur ducimus,
+              tempora vitae, cum sit velit dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident quasi rem et veniam id consequatur magni. Numquam
+              quaerat fugit laudantium facilis quam, consectetur ducimus,
+              tempora vitae, cum sit velit dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident quasi rem et veniam id consequatur magni. Numquam
+              quaerat fugit laudantium facilis quam, consectetur ducimus,
+              tempora vitae, cum sit velit dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident quasi rem et veniam id consequatur magni. Numquam
+              quaerat fugit laudantium facilis quam, consectetur ducimus,
+              tempora vitae, cum sit velit dolores.
+            </li>
+          </ol>
+          <div class="button" style="align-self: flex-end; padding: 10px">
+            <button type="button">Daftar</button>
+          </div>
         </div>
       </section>
     </main>
+
+    <script src="js/lightslider.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          // alert($('#slider').html());
+          $('#slider').lightSlider({
+              item:1,
+              loop:false,
+              slideMove:1,
+              speed:600,
+          });  
+        });
+    </script>
   </body>
 </html>
