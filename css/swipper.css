@@ -239,6 +239,34 @@
     --swiper-navigation-color: var(--swiper-theme-color);
     */
   }
+
+  .laptop::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 110px;
+    width: 60%;
+    height: 60%;
+    background-image: url(https://danone.co.id/wp-content/themes/danone-digital/assets/img/laptop-big-blank.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+  }
+
+  .komitmen {
+    color: #fff !important;
+    top: 20% !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  
+  .pemberdayaan {
+    color: #0f5aa2 !important;
+    top: 50% !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+
   .swiper-button-prev {
     padding-left: 10px;
   }
@@ -326,6 +354,60 @@
     --swiper-pagination-bullet-vertical-gap: 6px;
     */
   }
+
+  .swiper-pagination-komitmen {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* transform: translate3d(0, 0, 0); */
+    z-index: 10;
+    top: 100px;
+    top: 30% !important; 
+    transform: translateY(-50%);
+  }
+
+  .custom .swiper-pagination-bullet-1 {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://danone.co.id/wp-content/uploads/2021/11/Group-465.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+  .custom .swiper-pagination-bullet-2 {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://danone.co.id/wp-content/uploads/2021/11/Group-466.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+  .custom .swiper-pagination-bullet-3 {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://danone.co.id/wp-content/uploads/2021/11/Group-467.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+  
+  .custom .swiper-pagination-bullet-active {
+    /* background-color: red; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+  }
+
   .swiper-pagination {
     position: absolute;
     text-align: center;
@@ -695,4 +777,15 @@
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     overflow: hidden;
+  }
+
+  .program {
+    display: block;
+    background-image: url('https://danone.co.id/wp-content/themes/danone-digital/assets/img/bg-danoners-green.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top 120px;
+    width: 25%;
+    height: 600px;
+    z-index: -1;
   }

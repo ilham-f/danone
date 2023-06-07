@@ -7,10 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- You may link to a separate CSS file here -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/swipper.css" />
+    <!-- You may link to a separate JS file here -->
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.js"></script>
   </head>
 
   <body>
-    <header style="position: sticky; top: 0; z-index: 100; background-color: #fff;">
+    <header style="position: sticky; top: 0; z-index: 100; background-color: #fff; padding-bottom: 15px;">
       <nav class="container" style="display: flex; justify-content: space-between; align-items: center;">
         <a href="index.html">
           <div class="danone-logo">
@@ -57,30 +61,84 @@
       </nav>
     </header>
     <main>
-      <section id="hero" style="padding: 10px; width: 100%; text-align: center; color: #0f5aa2;">
-        <h1 style="font-weight: bold;">KOMITMEN</h1>
+      <section id="hero" style="margin-bottom: -10px; width: 100%; text-align: center; color: #0f5aa2;">
+        <h1 style="font-weight: bold; font-size: 30PX; margin-top: 0;">KOMITMEN</h1>
         <h1 style="margin-top: -25px; font-size: 50PX;">KAMI</h1>
       </section>
 
       <img style="max-width: 100%;" decoding="async" loading="lazy" width="1920" height="600" class="wp-block-cover__image-background wp-image-1192 lazyloaded" alt src="https://danone.co.id/wp-content/uploads/2021/11/banner_good_impact.png" data-object-fit="cover" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://danone.co.id/wp-content/uploads/2021/11/banner_good_impact.png 1920w, https://danone.co.id/wp-content/uploads/2021/11/banner_good_impact-300x114.png 300w, https://danone.co.id/wp-content/uploads/2021/11/banner_good_impact-1024x389.png 1024w, https://danone.co.id/wp-content/uploads/2021/11/banner_good_impact-768x292.png 768w, https://danone.co.id/wp-content/uploads/2021/11/banner_good_impact-1536x583.png 1536w" data-ll-status="loaded" >
 
-      <section id="komitmenkami">
-        <h2>KOMITMEN KAMI BAGI PLANET</h2>
-        <h3>Menjaga lingkungan agar tetap lestari</h3>
+      <section id="komitmenkami" class="container">
+        
+        <h1 style="font-size: 40px; margin-top: 60px; text-align: center; color: #0f5aa2;" class="container">
+          KOMITMEN KAMI BAGI PLANET
+        </h1>
+        <h1 style="font-size: 20px; margin-top: -30px; text-align: center; color: #2A9DE9;" class="container">
+          Menjaga lingkungan agar tetap lestari
+        </h1>
 
-        <h2>KEMASAN</h2>
-        <h3>Komitmen untuk menggunakan kemasan yang 100% bisa 
-          didaur ulang</h3>
-        <p>Danone Indonesia berkomitmen untuk mendesain 
-          kemasan yang berlanjutan untuk menjaga makanan dan minuman 
-          dalam kualitas terbaiknya. Danone Indonesia juga menempatkan 
-          daya upaya tertinggi pada sistem pengelolaan sampah untuk 
-          memastikannya dapat didaur ulang, digunakan kembali atau 
-          digabungkan secara praktis.</p>
+        <div class="swiper" style="height: 500px;">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" style="margin-top: 250px;">
+            <!-- Slides -->
+            <div class="swiper-slide" style="text-align: center;">
+              <h1 style="font-size: 40px; margin-top: 60px; text-align: center; color: #d69d15;">
+                KEMASAN
+              </h1>
+              <h1 style="font-size: 20px; margin-top: -30px; text-align: center; color: #0f5aa2;">
+                Komitmen untuk menggunakan kemasan yang 100% bisa 
+                didaur ulang
+              </h1>
+              <p>Danone Indonesia berkomitmen untuk mendesain 
+                kemasan yang berlanjutan untuk menjaga makanan dan minuman 
+                dalam kualitas terbaiknya. Danone Indonesia juga menempatkan 
+                daya upaya tertinggi pada sistem pengelolaan sampah untuk 
+                memastikannya dapat didaur ulang, digunakan kembali atau 
+                digabungkan secara praktis.
+              </p>
+            </div>
+            <div class="swiper-slide" style="text-align: center;">
+              <h1 style="font-size: 40px; margin-top: 60px; text-align: center; color: #d69d15;">
+                AIR
+              </h1>
+              <h1 style="font-size: 20px; margin-top: -30px; text-align: center; color: #0f5aa2;">
+                Positive water impact, mengembalikan air lebih banyak dari yang digunakan
+              </h1>
+              <p>
+                Danone berkomitmen untuk melestarian sumber mata air dan lingkungan alami, dengan mendorong sirkulasi air di dalam dan di sekitar lokasi produksi, dan menyediakan air minum yang aman bagi masyarakat dan komunitas yang membutuhkan.
+              </p>
+            </div>
+            <div class="swiper-slide" style="text-align: center;">
+              <h1 style="font-size: 40px; margin-top: 60px; text-align: center; color: #d69d15;">
+                KARBON
+              </h1>
+              <h1 style="font-size: 20px; margin-top: -30px; text-align: center; color: #0f5aa2;">
+                Danone berkomitmen untuk menjadi perusahaan netral karbon
+              </h1>
+              <p>
+                Danone Indonesia berjanji dalam Kebijakan Iklim 2015 kami untuk menjadi perusahaan netral karbon pada tahun 2050 di seluruh rantai nilai kami. Komitmen nol karbon bersih kami berarti bahwa kami bertanggung jawab atas emisi karbon dari tempat kami memasok bahan-bahan kami ke fasilitas yang mengelola pengemasan setelah produk kami dikonsumsi.
+              </p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination-komitmen custom"></div>
+        
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        
+        </div>
+        
+        <h1 style="font-size: 40px; margin-top: 80px; text-align: center; color: #0f5aa2;">
+          KOMITMEN KAMI BAGI KESEHATAN
+        </h1>
+        <h1 style="font-size: 40px; margin-top: 40px; text-align: center; color: #d69d15;">
+          INOVASI & SOLUSI
+        </h1>
 
-          <h2>KOMITMEN KAMI BAGI KESEHATAN</h2>
-          <h2>INOVASI & SOLUSI</h2>
-          <p>Indonesia masih dihadapkan tantangan untuk mengatasi 
+        <img style="max-width: 100%;" decoding="async" loading="lazy" width="1300" height="401" src="https://danone.co.id/wp-content/uploads/2021/11/2-1.png" alt class="wp-image-755 lazyloaded" sizes="(max-width: 1300px) 100vw, 1300px" srcset="https://danone.co.id/wp-content/uploads/2021/11/2-1.png 1300w, https://danone.co.id/wp-content/uploads/2021/11/2-1-300x93.png 300w, https://danone.co.id/wp-content/uploads/2021/11/2-1-1024x316.png 1024w, https://danone.co.id/wp-content/uploads/2021/11/2-1-768x237.png 768w" data-ll-status="loaded" >
+          
+        <p style="text-align: center;">Indonesia masih dihadapkan tantangan untuk mengatasi 
             masalah kesehatan pada fase awal kehidupan. 
             Danone Indonesia melalui Nutricia dan Sarihusada 
             berpengalaman lebih dari 60 tahun telah melakukan 
@@ -96,48 +154,217 @@
             upaya Danone di Indonesia untuk mengembangkan inovasi produk 
             nutrisi yang berperan penting dalam membantu penanganan 
             berbagai isu kesehatan terkini yang ada di Indonesia seperti stunting dan anemia. Dengan kapasitas bisnis kami yang berskala global, kami juga melakukan kolaborasi dengan para pakar di bidangnya baik dalam skala nasional hingga global untuk menghadirkan sebuah inovasi dan solusi untuk kebutuhan nutrisi dan kesehatan masyarakat di Indonesia.
-          </p>
+        </p>
 
-          <h2>EDUKASI DAN KETERLIBATAN</h2>
-          <h3>Bersama Cegah Stunting merupakan inisiasi Danone Indonesia 
+        <h1 style="font-size: 40px; margin-top: 80px; text-align: center; color: #d69d15;">
+          EDUKASI DAN KETERLIBATAN
+        </h1>
+
+        <h4 style="text-align: center; color: #0f2677; margin-top: -30px;">
+            Bersama Cegah Stunting merupakan inisiasi Danone Indonesia 
             bersama dengan mitra-mitra strategis di sektor Pemerintahan dan Organisasi terkemuka 
             untuk menggalakkan sebuah gerakan upaya pencegahan stunting 
             yang mengintegrasikan program unggulan kami terhadap 
             kedua isu penting yaitu intervensi gizi spesifik dan sensitif.
-          </h3>
+        </h4>
 
-          <h2>KETERLIBATAN PEMANGKU KEPENTINGAN</h2>
-          <h3>Kemendikbudristek RI</h3>
-          <p>Sebagai upaya mendukung akses pendidikan bagi anak-anak yang memiliki tantangan di berbagai daerah di Indonesia, 
-            Danone Indonesia menjalin kemitraan dengan Kementrian Pendidikan, Kebudayaan, Riset, dan Teknologi
-            (Kemendikbudristek) memberikan Dukungan Akses Pendidikan dan Peningkatan Nutrisi Bagi Peserta Didik guna mewujudkan Merdeka Belajar.
-          </p>
+        <!-- Slider main container -->
+        <div class="swiper" style="background-repeat: no-repeat; background-image: url('https://danone.co.id/wp-content/themes/danone-digital/assets/img/bg-slide.png');">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="padding-left: 150px; padding-right: 150px; text-align: center;">
+              <h1 style="font-size: 40px; margin-top: 80px; text-align: center; color: #fff;">
+                ISI PIRINGKU
+              </h1>
+              <p style="color: #fff;">
+                Untuk mendukung edukasi tersebut, Danone Indonesia bekerja sama dengan Fakultas Ekologi Manusia, Institut Pertanian Bogor (FEMA IPB) dan Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi Republik Indonesia (Kemendikbudristek) mengembangkan Panduan Edukasi Gizi, Kesehatan dan Pola Asuh untuk anak usia Sekolah Dasar (SD). Penerbitan panduan ini untuk memenuhi hak-hak anak dalam memperoleh gizi serta pengasuhan yang baik.
+              </p>
+              <img style="max-width: 100%;" width="1241" height="500" src="https://danone.co.id/wp-content/uploads/2021/11/ISBN-WEB.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" srcset="https://danone.co.id/wp-content/uploads/2021/11/ISBN-WEB.png 1241w, https://danone.co.id/wp-content/uploads/2021/11/ISBN-WEB-300x141.png 300w, https://danone.co.id/wp-content/uploads/2021/11/ISBN-WEB-1024x481.png 1024w, https://danone.co.id/wp-content/uploads/2021/11/ISBN-WEB-768x361.png 768w" data-ll-status="loaded">
+            </div>
 
-          <h2>KOMITMEN KAMI BAGI MANUSIA</h2>
-          <h3>Melalui misi dan komitmen ganda tersebut, 
-            Danone Indonesia bertujuan untuk membangun masa depan 
-            yang lebih sehat dan lebih baik. Untuk mencapai itu semua, 
-            kami didukung oleh lebih dari 15.000 karyawan yang tersebar 
-            di seluruh Indonesia melalui lebih dari 1,5 juta outlet dan 26 pabrik.</h3>
-          <h3>Nilai sosial yang telah dibangun oleh Danone Group 
-            selama ini menginspirasi kami di Danone Indonesia untuk 
-            mewujudkannya pada dua ruang lingkup utama yakni komitmen 
-            pada Inclusive Diversity: Perwujudan komitmen kami menuju 
-            pencapaian 2030 untuk menjadi salah satu perusahaan paling 
-            inklusif dan beragam di dunia, yaitu Peta Jalan Keragaman 
-            Inklusif Global 2020 kami yang berfokus pada 3 prioritas: 
-            Mempromosikan Perilaku Inklusif, Kesetaraan Gender, dan 
-            Budaya dan Kebangsaan. Disisi lain, kami memiliki fokus 
-            untuk memberikan kesempatan berkembang bagi masyarakat 
-            di sekitar kami.</h3>
+            <div class="swiper-slide" style="padding-left: 150px; padding-right: 150px; text-align: center;">
+              <h1 style="font-size: 40px; margin-top: 80px; text-align: center; color: #fff;">
+                GESID
+              </h1>
+              <p style="color: #fff;">
+                Melalui GESID (Gerakan Sehat Indonesia) Danone Indonesia bertujuan untuk memberikan pemahaman dan kesadaran kepada anak muda Indonesia mengenai pentingnya kesehatan dan gizi pada remaja, pentingnya 1000 hari pertama dalam kehidupan, dan juga pembangunan karakter.
+              </p>
+              <img style="max-width: 100%;" width="1158" height="498" src="https://danone.co.id/wp-content/uploads/2021/11/gesid4.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" srcset="https://danone.co.id/wp-content/uploads/2021/11/gesid4.png 1158w, https://danone.co.id/wp-content/uploads/2021/11/gesid4-300x129.png 300w, https://danone.co.id/wp-content/uploads/2021/11/gesid4-1024x440.png 1024w, https://danone.co.id/wp-content/uploads/2021/11/gesid4-768x330.png 768w" data-ll-status="loaded">
+            </div>
 
-          <h2>PROGRAM PENGEMBANGAN DANONERS</h2>
-          <h2>PEMBERDAYAAN MASYARAKAT</h2>
-          <h3>Program Pemberdayaan Perempuan</h3>      
+            <div class="swiper-slide" style="padding-left: 150px; padding-right: 150px; text-align: center;">
+              <h1 style="font-size: 40px; margin-top: 80px; text-align: center; color: #fff;">
+                WARUNG ANAK SEHAT
+              </h1>
+              <p style="color: #fff;">
+                Memberdayakan ibu-ibu kantin sekolah untuk mengelola kantin sehat di sekolah untuk menyediakan jajanan dan minuman sehat bagi siswa. Program ini juga mendidik guru, orang tua dan penjual.
+              </p>
+              <img style="max-width: 100%;" width="1920" height="450" src="https://danone.co.id/wp-content/uploads/2021/11/warung_sehat.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" srcset="https://danone.co.id/wp-content/uploads/2021/11/warung_sehat.png 1920w, https://danone.co.id/wp-content/uploads/2021/11/warung_sehat-300x128.png 300w, https://danone.co.id/wp-content/uploads/2021/11/warung_sehat-1024x436.png 1024w, https://danone.co.id/wp-content/uploads/2021/11/warung_sehat-768x327.png 768w, https://danone.co.id/wp-content/uploads/2021/11/warung_sehat-1536x654.png 1536w" data-ll-status="loaded">
+            </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev komitmen"></div>
+          <div class="swiper-button-next komitmen"></div>
+
+        </div>
+        
       </section>
+      
+      <h1 style="font-size: 40px; margin-top: 60px; text-align: center; color: #d69d15;">
+        KETERLIBATAN PEMANGKU KEPENTINGAN
+      </h1>
 
+      <div class="swiper laptop" style="height: 730px; background-repeat: no-repeat; background-image: url('https://danone.co.id/wp-content/themes/danone-digital/assets/img/bg-shape-blue.png');">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" style="padding-left: 150px; padding-right: 130px; display: flex;">
+            <img style="position: absolute; left: 162px; top: 138px;" width="566" height="357" src="https://danone.co.id/wp-content/uploads/2021/11/aqua_home.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 480px) 100vw, 480px" srcset="https://danone.co.id/wp-content/uploads/2021/11/aqua_home.png 480w, https://danone.co.id/wp-content/uploads/2021/11/KEMENDIKBUD-300x189.png 300w" data-ll-status="loaded" >            
+            <div class="caption" style="margin-left: 670px; margin-top: 35px;">
+              <h1 style="font-size: 25px; margin-top: 80px; text-align: center; color: #fff;">
+                Kemendikbudristek RI
+              </h1>
+              <p style="color: #fff; text-align: justify;">
+                Sebagai upaya mendukung akses pendidikan bagi anak-anak yang memiliki tantangan di berbagai daerah di Indonesia, 
+                Danone Indonesia menjalin kemitraan dengan Kementrian Pendidikan, Kebudayaan, Riset, dan Teknologi
+                (Kemendikbudristek) memberikan Dukungan Akses Pendidikan dan Peningkatan Nutrisi Bagi Peserta Didik guna mewujudkan Merdeka Belajar.              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="padding-left: 150px; padding-right: 130px; display: flex;">
+            <img style="position: absolute; left: 162px; top: 138px;" width="566" height="357" src="https://danone.co.id/wp-content/uploads/2021/11/BKKBN-1.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 480px) 100vw, 480px" srcset="https://danone.co.id/wp-content/uploads/2021/11/BKKBN-1.png 480w, https://danone.co.id/wp-content/uploads/2021/11/BKKBN-1.png 300w" data-ll-status="loaded" >            
+            <div class="caption" style="margin-left: 670px; margin-top: 35px;">
+              <h1 style="font-size: 25px; margin-top: 80px; text-align: center; color: #fff;">
+                Kemitraan dengan BKKBN
+              </h1>
+              <p style="color: #fff; text-align: justify;">
+                Sebagai badan yang telah ditunjuk oleh Pemerintah sebagai Ketua Pelaksana Program Percepatan Penurunan Stunting, BKKBN menyadari bahwa dibutuhkan kerjasama dengan beberapa mitra strategis untuk mempercepat upayanya. Maka dari itu, BKKBN dan Danone Indonesia menandatangani nota kesepahaman dan melakukan sinergi program strategis kedua pihak untuk mencegah stunting. BKKBN memiliki program unggulan yakni Bangga Kencana untuk mendukung percepatan penurunan stunting di Indonesia, yang dimana Danone Indonesia juga memiliki payung integrasi program.              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="padding-left: 150px; padding-right: 130px; display: flex;">
+            <img style="position: absolute; left: 162px; top: 138px;" width="566" height="357" src="https://danone.co.id/wp-content/uploads/2021/11/IMERI.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 480px) 100vw, 480px" srcset="https://danone.co.id/wp-content/uploads/2021/11/IMERI.png 480w, https://danone.co.id/wp-content/uploads/2021/11/IMERI.png 300w" data-ll-status="loaded" >            
+            <div class="caption" style="margin-left: 670px; margin-top: 35px;">
+              <h1 style="font-size: 25px; margin-top: 80px; text-align: center; color: #fff;">
+                Indonesian Medical Education and Research Institute (IMERI)
+              </h1>
+              <p style="color: #fff; text-align: justify;">
+                Kolaborasi Nutricia dengan IMERI FK UI untuk mendukung populasi pre-senior dan senior untuk mempersiapkan berbagai upaya agar bisa agar masyarakat dapat tetap sehat seiring bertambahnya usia melalui peluncuran Modul untuk tenaga kesehatan yang berjudul Healthy Aging Module as a Prevention Strategy for Non-Communicable Diseases in Elderly Population.              </p>
+            </div>
+          </div>
+        </div>
 
-      <section id="products">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev komitmen"></div>
+        <div class="swiper-button-next komitmen"></div>
+
+      </div>
+
+      <div class="container">
+        <h1 style="font-size: 40px; margin-top: -60px; text-align: center; color: #0f5aa2;">
+          KOMITMEN KAMI BAGI MANUSIA
+        </h1>
+        <h4 style="text-align: center; color: #59c3d5;">Melalui misi dan komitmen ganda tersebut, 
+          Danone Indonesia bertujuan untuk membangun masa depan 
+          yang lebih sehat dan lebih baik. Untuk mencapai itu semua, 
+          kami didukung oleh lebih dari 15.000 karyawan yang tersebar 
+          di seluruh Indonesia melalui lebih dari 1,5 juta outlet dan 26 pabrik.
+        </h4>
+        <h4 style="text-align: center; color: #0F2677;">Nilai sosial yang telah dibangun oleh Danone Group 
+          selama ini menginspirasi kami di Danone Indonesia untuk 
+          mewujudkannya pada dua ruang lingkup utama yakni komitmen 
+          pada Inclusive Diversity: Perwujudan komitmen kami menuju 
+          pencapaian 2030 untuk menjadi salah satu perusahaan paling 
+          inklusif dan beragam di dunia, yaitu Peta Jalan Keragaman 
+          Inklusif Global 2020 kami yang berfokus pada 3 prioritas: 
+          Mempromosikan Perilaku Inklusif, Kesetaraan Gender, dan 
+          Budaya dan Kebangsaan. Disisi lain, kami memiliki fokus 
+          untuk memberikan kesempatan berkembang bagi masyarakat 
+          di sekitar kami.
+        </h4>
+
+        <h4 style="margin-top: 100px; text-align: center; color: #0F2677;">
+          Beragam inisiatif tersebut diantaranya:
+        </h4>
+        <h1 style="font-size: 40px; margin-top: 40px; text-align: center; color: #0f5aa2;">
+          PROGRAM PENGEMBANGAN DANONERS
+        </h1>
+        <div class="program-wrapper" style="display: flex; justify-content: space-evenly; height: 600px;">
+          <div class="program" style="text-align: center;">
+            <img style="max-height: 230px; max-width: 70%; object-fit: cover; border-radius: 50%; border: #fff; border-width: 3px; border-style: solid;" width="1280" height="853" src="https://danone.co.id/wp-content/uploads/2021/11/0a8555b4-0484-4d57-b179-ff2e5d12fdc7.jpg" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 1280px) 100vw, 1280px" srcset="https://danone.co.id/wp-content/uploads/2021/11/0a8555b4-0484-4d57-b179-ff2e5d12fdc7.jpg 1280w, https://danone.co.id/wp-content/uploads/2021/11/0a8555b4-0484-4d57-b179-ff2e5d12fdc7-300x200.jpg 300w, https://danone.co.id/wp-content/uploads/2021/11/0a8555b4-0484-4d57-b179-ff2e5d12fdc7-1024x682.jpg 1024w, https://danone.co.id/wp-content/uploads/2021/11/0a8555b4-0484-4d57-b179-ff2e5d12fdc7-768x512.jpg 768w" data-ll-status="loaded" >            
+            <p style="color: #fff; max-width: 70%; margin-left: 50px;">Pengembangan Talenta Danoners</p>
+            <p style="font-size: 12px; color: #fff; max-width: 70%; margin-left: 50px; line-height: 20px;">Penyediaan program pengembangan pelatihan dan pengembangan untuk melibatkan lebih banyak karyawan dalam meningkatkan keterampilan baru, rasa kepedulian pada komunitas masyarakat, dan juga mendapatkan pengalaman lintas budaya pada pekerjaan di lingkup global.</p>
+          </div>
+          <div class="program" style="text-align: center;">
+            <img style="max-width: 70%; object-fit: cover; border-radius: 50%; border: #fff; border-width: 3px; border-style: solid;" width="1280" height="230" src="https://danone.co.id/wp-content/uploads/2021/11/3fa4fce8-89f2-4cb8-8bee-0dd2571f69c3.jpg" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 1280px) 100vw, 1280px" srcset="https://danone.co.id/wp-content/uploads/2021/11/3fa4fce8-89f2-4cb8-8bee-0dd2571f69c3.jpg 1280w, https://danone.co.id/wp-content/uploads/2021/11/3fa4fce8-89f2-4cb8-8bee-0dd2571f69c3-300x200.jpg 300w, https://danone.co.id/wp-content/uploads/2021/11/3fa4fce8-89f2-4cb8-8bee-0dd2571f69c3-1024x683.jpg 1024w, https://danone.co.id/wp-content/uploads/2021/11/3fa4fce8-89f2-4cb8-8bee-0dd2571f69c3-768x512.jpg 768w" data-ll-status="loaded" >
+            <p style="color: #fff; max-width: 70%; margin-left: 50px;">Penguatan Rasa Memiliki para Danoners</p>
+            <p style="font-size: 12px; color: #fff; max-width: 70%; margin-left: 50px; line-height: 20px;">Program ‘One Person, One Voice, One Share’ hadir untuk menciptakan lingkungan yang inklusif dengan memberikan hak bersuara dan juga kepemilikian saham Danone kepada setiap karyawan sehingga dapat menumbuhkan pola pikir rasa memiliki dan tanggung jawab.</p>
+          </div>
+          <div class="program" style="text-align: center;">
+            <img style="max-height: 230px; max-width: 70%; object-fit: cover; border-radius: 50%; border: #fff; border-width: 3px; border-style: solid;" width="1280" height="853" src="https://danone.co.id/wp-content/uploads/2021/11/72277762-e5f0-4f29-ba32-1e8f87deec49.jpg" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 1280px) 100vw, 1280px" srcset="https://danone.co.id/wp-content/uploads/2021/11/72277762-e5f0-4f29-ba32-1e8f87deec49.jpg 1280w, https://danone.co.id/wp-content/uploads/2021/11/72277762-e5f0-4f29-ba32-1e8f87deec49-300x200.jpg 300w, https://danone.co.id/wp-content/uploads/2021/11/72277762-e5f0-4f29-ba32-1e8f87deec49-1024x682.jpg 1024w, https://danone.co.id/wp-content/uploads/2021/11/72277762-e5f0-4f29-ba32-1e8f87deec49-768x512.jpg 768w" data-ll-status="loaded" > 
+            <p style="color: #fff; max-width: 70%; margin-left: 50px;">Program Wise</p>
+            <p style="font-size: 12px; color: #fff; max-width: 70%; margin-left: 50px; line-height: 20px;">Sebuah program yang bertujuan untuk mengembangkan budaya kesehatan dan keselamatan di semua lokasi Danone dalam mengurangi jumlah kecelakaan kerja secara signifikan.</p>
+          </div>
+        </div>
+      </div>
+
+      <h1 style="font-size: 40px; margin-top: 40px; text-align: center; color: #0f5aa2;">
+        PEMBERDAYAAN MASYARAKAT
+      </h1>
+      <h1 style="font-size: 20px; margin-top: -20px; margin-bottom: 20px; text-align: center; color: #379de9;">
+        Program Pemberdayaan Perempuan
+      </h1>
+      <div class="swiper" style="height: 730px; background-color: #fff; margin-bottom: 100px;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" style="background-position-x: center; background-position-y: bottom; background-size: 85% 90%; background-repeat: no-repeat; background-image: url('https://danone.co.id/wp-content/themes/danone-digital/assets/img/bg-slide.png'); padding-left: 150px; padding-right: 130px; display: flex;">
+            <img style="position: absolute; left: 165px; top: 60px;" width="566" height="557" src="https://danone.co.id/wp-content/uploads/2021/11/aqua_home.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 480px) 100vw, 480px" srcset="https://danone.co.id/wp-content/uploads/2021/11/aqua_home.png 480w, https://danone.co.id/wp-content/uploads/2021/11/KEMENDIKBUD-300x189.png 300w" data-ll-status="loaded" >            
+            <div class="caption" style="margin-left: 640px; margin-top: 35px; padding-right: 40px;">
+              <h1 style="font-size: 35px; margin-top: 180px; color: #fff;">
+                Aqua Home Service
+              </h1>
+              <p style="color: #fff; text-align: justify;">
+                Pemberdayaan kepada para ibu rumah tangga melalui rangkaian loka karya dan edukasi tentang keuangan dan usaha mikro kecil dengan menjadi duta kebaikan AQUA.           
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-position-x: center; background-position-y: bottom; background-size: 85% 90%; background-repeat: no-repeat; background-image: url('https://danone.co.id/wp-content/themes/danone-digital/assets/img/bg-slide.png'); padding-left: 150px; padding-right: 130px; display: flex;">
+            <img style="position: absolute; left: 165px; top: 60px;" width="566" height="557" src="https://danone.co.id/wp-content/uploads/2021/11/rumah_tempe.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 480px) 100vw, 480px" srcset="https://danone.co.id/wp-content/uploads/2021/11/rumah_tempe.png 480w, https://danone.co.id/wp-content/uploads/2021/11/rumah_tempe.png 300w" data-ll-status="loaded" >            
+            <div class="caption" style="margin-left: 640px; margin-top: 35px; padding-right: 40px;">
+              <h1 style="font-size: 35px; margin-top: 180px; color: #fff;">
+                Rumah Tempe
+              </h1>
+              <p style="color: #fff; text-align: justify;">
+                Sebuah program yang memberikan pendampingan, pelatihan, dan fasilitas pendukung agar masyarakat dapat menciptakan peluang ekonomi dengan pembuatan tempe sehat.           
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-position-x: center; background-position-y: bottom; background-size: 85% 90%; background-repeat: no-repeat; background-image: url('https://danone.co.id/wp-content/themes/danone-digital/assets/img/bg-slide.png'); padding-left: 150px; padding-right: 130px; display: flex;">
+            <img style="position: absolute; left: 165px; top: 60px;" width="566" height="557" src="https://danone.co.id/wp-content/uploads/2021/11/Rumah-Bunda-Sehat2.png" class="img-fluid wp-post-image lazyloaded" alt decoding="async" loading="lazy" sizes="(max-width: 480px) 100vw, 480px" srcset="https://danone.co.id/wp-content/uploads/2021/11/Rumah-Bunda-Sehat2.png 480w, https://danone.co.id/wp-content/uploads/2021/11/Rumah-Bunda-Sehat2.png 300w" data-ll-status="loaded" >            
+            <div class="caption" style="margin-left: 640px; margin-top: 35px; padding-right: 40px;">
+              <h1 style="font-size: 35px; margin-top: 180px; color: #fff;">
+                Rumah Bunda Sehat
+              </h1>
+              <p style="color: #fff; text-align: justify;">
+                Sebuah program terpadu untuk meningkatkan pengetahuan kepada para ibu dari keluarga kurang mampu tentang gizi, pendampingan, keterampilan mengolah makanan dan kewirausahaan.           
+              </p>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev pemberdayaan"></div>
+        <div class="swiper-button-next pemberdayaan"></div>
+
+      </div>
+      
+
+      <!-- <section id="products">
         <h2>Our Products</h2>
         <div class="product">
           <img src="product1.jpg" alt="Product 1" />
@@ -149,7 +376,6 @@
           <h3>Product 2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <!-- Add more product elements as needed -->
       </section>
 
       <section id="careers">
@@ -167,7 +393,7 @@
           <textarea placeholder="Your Message"></textarea>
           <button type="submit">Send Message</button>
         </form>
-      </section>
+      </section> -->
 
       <footer style="display: flex; justify-content: space-between; background-color: #0f5aa2; padding: 25px; padding-left: 100px; padding-right: 100px; color: #fff;">
         <small>Copyright 2023 Danone. All rights reserved.</small>
@@ -178,5 +404,60 @@
       </footer>
 
     </main>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination-komitmen',
+          clickable: true
+        },
+
+        on: {
+          init: function() {
+            var bullets = this.pagination.bullets;
+
+            for (var i = 0; i < bullets.length; i++) {
+              bullets[i].classList.add('swiper-pagination-bullet-' + (i + 1));
+            }
+          },
+          slideChange: function() {
+            var bullets = this.pagination.bullets;
+            var activeIndex = this.realIndex;
+
+            for (var i = 0; i < bullets.length; i++) {
+              bullets[i].classList.remove('swiper-pagination-bullet-active');
+            }
+
+            bullets[activeIndex].classList.add('swiper-pagination-bullet-active');
+          }
+        },
+
+      });
+    </script>
+    
+    <script>
+      const swiper_edu = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+
+      });
+    </script>
+
   </body>
 </html>
