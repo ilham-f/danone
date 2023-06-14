@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danone Indonesia</title>
-    <link rel="stylesheet" href="styles.css" />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Danone Indonesia</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+      <link rel="stylesheet" href="./css/styles.css">
+      <script src="js/swiper.js"></script>
+      <script src="js/jquery.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- You may link to a separate CSS file here -->
     <style>
         .vertical-line {
@@ -42,52 +49,59 @@
         border-radius: 0.25rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
+
+        input[type=text] {
+          padding: 12px;
+          margin: 12px 0;
+          width: 100%;
+          border-radius:10px;
+          background-color: #f1f1f1;
+        }
     </style>
   </head>
 
   <body>
-    <header style="padding-left: 50px; padding-right: 50px;">
-      <nav style="display: flex; justify-content: space-between; align-items: center;">
-        <div class="danone-logo">
-            <img style="display: block; height: 80px;" src="https://danone.co.id/wp-content/uploads/2021/11/danone-logo-2.png" alt="danone-logo">
-        </div>
+    <header style="position: sticky; top: 0; z-index: 100; background-color: #fff; padding-bottom: 15px;">
+      <nav class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html">
+          <div class="danone-logo">
+              <img style="display: block; height: 80px;" src="https://danone.co.id/wp-content/uploads/2021/11/danone-logo-2.png" alt="danone-logo">
+          </div>
+        </a>
         <div class="wrapper" style="display: flex; flex-direction: column;">
             <div class="wrapper">
-                <ul style="display: flex; justify-content: end">
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="20" height="23" src="https://danone.co.id/wp-content/uploads/2022/02/icon-tiktok.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
+                <ul style="display: flex; justify-content: end; align-items: center;">
+                  <li style="padding-top: 5px; list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><a style="text-decoration: none; cursor: pointer;" href="#">
+                    <img width="14" height="16" src="https://danone.co.id/wp-content/uploads/2022/02/icon-tiktok.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
+                    </a>
                   </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="23" height="23" src="https://danone.co.id/wp-content/uploads/2022/02/icon-ig.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
+                  <li style="padding-top: 5px; list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><a style="text-decoration: none; cursor: pointer;" href="#">
+                    <img width="16" height="16" src="https://danone.co.id/wp-content/uploads/2022/02/icon-ig.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
+                    </a>
                   </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="30" height="24" src="https://danone.co.id/wp-content/uploads/2022/02/icon-yt.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
+                  <li style="padding-top: 3px; list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><a style="text-decoration: none; cursor: pointer;" href="#">
+                    <img width="20" height="14" src="https://danone.co.id/wp-content/uploads/2022/02/icon-yt.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
+                    </a>
                   </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">
-                    <img width="24" height="24" src="https://danone.co.id/wp-content/uploads/2022/02/icon-web.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
-                    </a></small>
+                  <li style="padding-top: 5px; list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 10px;"><a style="text-decoration: none; cursor: pointer;" href="#">
+                    <img width="16" height="16" src="https://danone.co.id/wp-content/uploads/2022/02/icon-web.png" class="_mi _before _image" alt="" decoding="async" loading="lazy" aria-hidden="true" />
+                    </a>
                   </li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">Kontak</a></small></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><small><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="#">Kontak</a></small></li>
 
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 0px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">ID</a></small></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 0px; padding-right: 10px;"><small><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="#">ID</a></small></li>
                   <div class="vertical-line" style="margin: 0;"></div>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 0px;"><small><a style="text-decoration: none; cursor: pointer;" href="#">ENG</a></small></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 10px; padding-right: 0px;"><small><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="#">EN</a></small></li>
                 </ul>
             </div>
             <div class="wrapper">
                 <ul style="display: flex; justify-content: space-evenly">
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Tentang Kami</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Merek</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Komitmen Kami</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">Cerita Kami</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 30px;"><a style="text-decoration: none; cursor: pointer;" href="#">danone karir</a></li>
-                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 30px; padding-right: 0px;"><a style="text-decoration: none; cursor: pointer;" href="#">campaign
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> -->
-                    </a>
-                  </li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 20px; padding-right: 20px;"><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="tentang-kami.html">Tentang Kami</a></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 20px; padding-right: 20px;"><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="merk.html">Merek</a></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 20px; padding-right: 20px;"><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="komitmen-kami.html">Komitmen Kami</a></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 20px; padding-right: 20px;"><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="#">Cerita Kami</a></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 20px; padding-right: 20px;"><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="#">danone karir</a></li>
+                  <li style="list-style-type: none; text-transform: uppercase; padding-left: 20px; padding-right: 0px;"><a style="text-decoration: none; cursor: pointer; color: #0f5aa2; font-weight: bold;" href="#">campaign</a></li>
                 </ul>
             </div>
         </div>
@@ -97,19 +111,46 @@
     <main>
       <section id="contact">
           <div class="card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-            <h2>Zero Waste Campaign</h2>
-            <p>Mari turut serta melestarikan bumi</p>
+            <section id="hero" style="margin-bottom: -10px; width: 100%; text-align: center; color: #0f5aa2;">
+              <h1 style="font-weight: bold; font-size: 50PX; margin-top: 20px;">30 Days Zero Waste Challenge</h1>
+            </section>
+
             <form>
-              <input style="margin-top: 10px; margin-bottom: 10px; width: 100%;" type="text" placeholder="Nama Lengkap" />
-              <input style="margin-top: 10px; margin-bottom: 10px; width: 100%;" type="text" placeholder="Alamat" />
-              <input style="margin-top: 10px; margin-bottom: 10px; width: 100%;" type="text" placeholder="Email" />
-              <input style="margin-top: 10px; margin-bottom: 10px; width: 100%;" type="text" placeholder="Link Postingan" />
-              <div style="text-align: end;" class="button">
-                  <button type="submit">Submit</button>
+              <label for="namalengkap">Nama Lengkap</label>
+              <input id="namalengkap" style="" type="text" placeholder="Nama Lengkap" />
+
+              <label for="alamat">Alamat</label>
+              <input id="alamat" style="" type="text" placeholder="Alamat" />
+
+              <label for="email">Email</label>
+              <input id="email" style="" type="text" placeholder="Email" />
+
+              <label for="linkpostingan">Link Postingan</label>
+              <input id="linkpostingan" style="" type="text" placeholder="Link Postingan" />
+
+              <div style="display: flex; flex-direction: row-reverse; margin-bottom: 60px;">
+                <a style=" margin-top: 40px; width: 250px; display: block; text-align: center; color: #fff; border-radius: 6px; padding: 10px 20px; font-weight: bold; background-color: #0F5AA2;" href="#ex1" rel="modal:open" class="btn">IKUTI</a>
               </div>
             </form>
         </div>
       </section>
+
+      <br><br><br>
     </main>
+
+    <div id="ex1" class="modal">
+      <div style="text-align: center;">
+        <h1>TERIMA KASIH</h1>
+        <p>TELAH BERPARTISIPASI DALAM CAMPAIGN INI</p>
+      </div>
+    </div>
+
+    <footer style="display: flex; justify-content: space-between; background-color: #0f5aa2; padding: 25px; padding-left: 100px; padding-right: 100px; color: #fff;">
+      <small>Copyright 2023 Danone. All rights reserved.</small>
+      <div class="d-flex" style="display: flex;">
+        <small style="margin-right: 40px;">Pernyataan Privasi</small>
+        <small>FAQ</small>
+      </div>
+    </footer>
   </body>
 </html>
